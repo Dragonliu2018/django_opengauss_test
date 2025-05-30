@@ -1,0 +1,97 @@
+# 忽略系统和编辑器生成的临时文件
+*.swp
+*.swo
+*~
+
+# 忽略编译生成的文件
+*.o
+*.out
+*.class
+*.pyc
+*.pyo
+*.dll
+*.so
+*.a
+*.lib
+*.obj
+
+# 忽略日志文件
+*.log
+*.log.*
+*.txt
+
+# 忽略配置文件
+config.json
+config.yml
+config.yaml
+.env
+
+# 忽略用户生成的文件
+*.user
+*.userprefs
+
+# 忽略虚拟环境文件
+venv/
+env/
+__pycache__/
+*.egg-info/
+
+# 忽略IDE生成的文件
+.idea/
+.vscode/
+.vs/
+*.iml
+*.ipynb_checkpoints/
+
+# 忽略构建文件
+build/
+dist/
+out/
+target/
+
+# 忽略测试文件
+test-results/
+coverage/
+
+# 忽略临时文件夹
+tmp/
+temp/
+
+# 忽略Docker生成的文件
+.dockerignore
+Dockerfile
+Dockerfile.*
+*.dockerfile
+*.dockerfile.*
+
+# 忽略Node.js项目相关文件
+node_modules/
+package-lock.json
+yarn.lock
+
+# 忽略Python虚拟环境文件
+*.pyc
+__pycache__/
+
+# 忽略Java项目相关文件
+*.class
+*.jar
+*.war
+
+# 忽略C#项目相关文件
+*.user
+*.userprefs
+*.suo
+*.vspscc
+*.csproj.user
+
+# 忽略Go项目相关文件
+*.mod
+*.sum
+
+# 忽略其他常见文件
+Thumbs.db
+.DS_Store
+*.bak
+*.tmp
+*.tmp.*

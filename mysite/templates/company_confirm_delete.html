@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>删除职工信息</title>
+    <style>
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px;
+        }
+        .btn-danger {
+            background-color: #f44336;
+        }
+        .btn-secondary {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>确认删除</h1>
+        <p>您确定要删除职工 "{{ company.name }}" 的信息吗？</p>
+        
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">确认删除</button>
+            <a href="{% url 'company_list' %}" class="btn btn-secondary">取消</a>
+        </form>
+    </div>
+</body>
+</html> 
